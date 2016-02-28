@@ -21,12 +21,12 @@ function solutionTest () {
 	tryDescribe();
 
 	function tryDescribe() {
-		Test.describe("description", function() {
+		describe("description", function() {
 		    var a = 5;
 		    console.log("describe body");
 		    console.log("a", a);
 		    
-		    Test.before(function () {
+		    before(function () {
 		        console.log("before");
 		        console.log("a", a);
 		        a = -5;
@@ -34,22 +34,22 @@ function solutionTest () {
 		    }
 		    );
 
-		    Test.it("ition", function() {
+		    it("ition", function() {
 		        console.log("it body");
 		    }
 		    );
 		    
-		    Test.it("ition beta", function() {
+		    it("ition beta", function() {
 		        console.log("it beta body");
 		    }
 		    );
 		}
 		);
 
-		Test.describe("green description", function () {
+		describe("green description", function () {
 		    console.log("hi form green description body");
 
-		    Test.it("green it", function() {
+		    it("green it", function() {
 		        console.log("hi form green it body");
 		    });
 		});
