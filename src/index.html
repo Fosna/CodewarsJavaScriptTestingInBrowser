@@ -4,10 +4,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Code Wars Test Bench</title>
+  <link rel="stylesheet" type="text/css" href="style.css"></link>
 </head>
 <body>
-	<h1>Take a look at developer tools console.</h1>
+	<div class="container">
+		<h1>Code Wars Test Bench</h1>
+
+		<div class="row">
+			<div class="col-md-3 ">
+				<div class="list-group">
+					<span id="total-errors-container" class="list-group-item notice notice-danger " style="display:none;"  >
+
+						<h4 id="totalerrors" class="list-group-item-heading count">
+						0
+						</h4>
+						<p class="list-group-item-text">
+							Number of Errors</p>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="mylog" class="md-3"></div>
+		</div>
+
+	</div>
 </body>
+<script src="logToDom.js"></script>
 <script src="utilBrowser.js"></script>
 <script src="cw-2.js"></script>
 <script src="solution.js"></script>
